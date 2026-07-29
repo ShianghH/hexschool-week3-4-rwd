@@ -165,13 +165,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 13px 0;
 }
 .logo {
   font-size: 20px;
   font-weight: 700;
   padding: 8px 12px;
   position: relative;
+  font-family: "Mina", sans-serif;
 }
 .logo::after {
   content: "";
@@ -181,7 +182,7 @@ img {
   height: 8px;
   border-radius: 50%;
   position: absolute;
-  top: 13px;
+  top: 12px;
   right: 10px;
   z-index: -1;
 }
@@ -193,6 +194,68 @@ img {
 .desktop-nav {
   display: none;
 }
+/* index-加入會員 */
+.member-promo {
+  margin-top: 24px;
+  background-color: #e8fec5;
+  .promo-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 20px;
+      font-weight: 700;
+      margin-right: 16px;
+    }
+    a {
+      color: #ffffff;
+      background-color: #212529;
+      border-radius: 4px;
+      padding: 8px 16px;
+      margin: 24px 0;
+    }
+    a:hover {
+      color: #c0fa73;
+    }
+  }
+}
+
+.footer {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  .footer-top {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .logo {
+      margin-bottom: 4px;
+      align-self: flex-start;
+    }
+
+    .nav-list a {
+      display: block;
+      margin-left: 12px;
+      margin-top: 4px;
+      padding: 12px 0;
+    }
+    .nav-list a:hover {
+      color: #c0fa73;
+    }
+  }
+  .footer-bottom {
+    padding-top: 32px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    border-top: 1px solid #dee2e6;
+    .copyright {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+/* index-header */
 .mobile-nav-list {
   display: flex;
 }
@@ -200,7 +263,6 @@ img {
   text-align: center;
   flex: 1;
   background-color: #e8fec5;
-  padding: 12px 0;
 }
 .mobile-nav-list li:hover {
   background-color: #f5fee7;
@@ -208,9 +270,10 @@ img {
 
 .mobile-nav-list a {
   display: block;
+  padding: 12px 0;
 }
 
-/* banner */
+/* index-banner */
 
 .banner {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true);
@@ -243,7 +306,7 @@ img {
     }
   }
 }
-/* 新品上市 */
+/* index-新品上市 */
 .new-products {
   padding: 40px 0 16px 0;
 }
@@ -284,7 +347,7 @@ img {
   }
 }
 
-/* 熱銷補貨 */
+/* index-熱銷補貨 */
 .restock-section {
   padding: 40px 0;
   h2 {
@@ -322,7 +385,7 @@ img {
   }
 }
 
-/* 跨界聯名 */
+/* index-跨界聯名 */
 .collab-section {
   padding: 24px 0;
   .collab-banner {
@@ -388,7 +451,7 @@ img {
   }
 }
 
-/* 系列選購 */
+/* index-系列選購 */
 .product-series {
   padding: 40px 0 38px 0;
   h2 {
@@ -429,7 +492,7 @@ img {
   }
 }
 
-/* 穿搭靈感 */
+/* index-穿搭靈感 */
 .style-guide {
   padding: 40px 0;
   h2 {
@@ -462,69 +525,96 @@ img {
   }
 }
 
-/* 加入會員 */
-.member-promo {
-  background-color: #e8fec5;
-  .promo-inner {
+/* productsList.html */
+main {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.breadcrumb {
+  .breadcrumb-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-    p {
-      font-size: 20px;
-      font-weight: 700;
-      margin-right: 16px;
+    gap: 8px;
+    font-size: 14px;
+    a,
+    li {
+      color: #6c757d;
     }
-    a {
-      color: #ffffff;
-      background-color: #212529;
-      border-radius: 4px;
-      padding: 8px 16px;
-      margin: 24px 0;
+    li:nth-child(5) a {
+      color: #212529;
     }
-    a:hover {
+    a:hover,
+    li:nth-child(5) a:hover {
       color: #c0fa73;
     }
   }
 }
-/* 頁尾 */
-.footer {
-  margin-top: 32px;
-  margin-bottom: 24px;
-  .footer-top {
-    margin-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    .logo {
-      margin-bottom: 4px;
-      align-self: flex-start;
-    }
+.product-list-title {
+  margin: 12px 0;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 9.5px 0;
+}
+/* product-layout */
 
-    .nav-list a {
-      display: block;
-      margin-left: 12px;
-      margin-top: 4px;
-      padding: 12px 0;
+.product-sidebar {
+  display: none;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -6px;
+  .card {
+    width: 50%;
+    padding: 0 6px;
+    margin-bottom: 24px;
+    img {
+      margin-bottom: 8px;
     }
-    .nav-list a:hover {
-      color: #c0fa73;
+    .product-name {
+      font-weight: 700;
     }
   }
-  .footer-bottom {
-    padding-top: 32px;
-    text-align: center;
-    color: #6c757d;
-    font-size: 14px;
-    border-top: 1px solid #dee2e6;
-    .copyright {
-      margin-bottom: 4px;
+}
+
+.pagination {
+  margin-top: 8px;
+  .pagination-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 0 4px;
+    }
+    li:first-child {
+      margin-left: 0;
+      margin-right: 8px;
+    }
+    li:last-child {
+      margin-left: 8px;
+      margin-right: 0;
+    }
+    .active {
+      background-color: #c0fa73;
+    }
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li:hover {
+      background-color: #c0fa73;
     }
   }
 }
 
 /* RWD */
 @media (min-width: 768px) {
+  /* index */
+  .header-inner {
+    padding: 17px 0;
+  }
   .mobile-nav {
     display: none;
   }
@@ -534,6 +624,9 @@ img {
     .desktop-nav-list {
       display: flex;
       gap: 40px;
+      a {
+        padding: 12px 0;
+      }
       a:hover {
         color: #c0fa73;
       }
@@ -724,6 +817,67 @@ img {
         padding: 12px 24px;
       }
     }
+  }
+  /* productList.html */
+  main {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .member-promo {
+    margin-top: 48px;
+  }
+  .breadcrumb {
+    .breadcrumb-list {
+      gap: 12px;
+      font-size: 16px;
+    }
+  }
+  .product-list-title {
+    padding: 7px 0;
+    margin: 24px 0;
+    font-size: 28px;
+  }
+  /* product-layout */
+  .product-layout {
+    display: flex;
+  }
+  .product-sidebar {
+    display: block;
+    width: 20%;
+    margin-right: 48px;
+    .category-item {
+      margin-bottom: 20px;
+      a {
+        padding: 8px 0;
+      }
+      a:hover {
+        color: #57a203;
+      }
+      &.active a {
+        color: #57a203;
+      }
+    }
+  }
+  .product-content {
+    width: 80%;
+  }
+  .product-list {
+    margin: 0 -12px;
+    .card {
+      width: 33.3333%;
+      padding: 0 12px;
+      margin-bottom: 48px;
+      img {
+        margin-bottom: 12px;
+      }
+    }
+    li:nth-child(10) {
+      display: none;
+    }
+  }
+
+  .pagination {
+    margin-top: 0;
   }
   .footer {
     margin: 64px 0;
