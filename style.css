@@ -255,6 +255,151 @@ img {
   }
 }
 
+/* brandStory.html */
+.brand-banner {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/c7e2e0d7111d666be94562b6f4830973da8b0621.png);
+  min-height: 240px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .brand-title {
+    text-align: center;
+    color: #ffffff;
+    h1 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+}
+.brand-intro {
+  max-width: 856px;
+  background-color: #f5fee7;
+  margin: 32px auto;
+  padding: 24px;
+  h3 {
+    color: #57a203;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  p {
+    font-weight: 400;
+  }
+  p:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+.brand-about {
+  max-width: 856px;
+  margin: 16px auto 0 auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dee2e6;
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  h5 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #57a203;
+    margin-bottom: 12px;
+  }
+  p {
+    font-weight: 400;
+  }
+  p:nth-child(3) {
+    margin-bottom: 12px;
+  }
+}
+.brand-history {
+  max-width: 856px;
+  margin: 32px auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dee2e6;
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  ul {
+    padding-left: 24px;
+  }
+  li {
+    list-style: disc;
+    font-weight: 400;
+  }
+  li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  span {
+    border-left: 1px solid #212529;
+    padding-left: 8px;
+    margin-left: 8px;
+  }
+}
+.brand-concept {
+  max-width: 856px;
+  margin: 32px auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dee2e6;
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  li {
+    font-weight: 400;
+    padding-left: 12px;
+    border-left: 3px solid #dee2e6;
+  }
+  li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.brand-story {
+  max-width: 856px;
+  margin: 32px auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dee2e6;
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  li {
+    padding: 8px 0;
+  }
+
+  .story-link {
+    border-bottom: 1px solid #57a203;
+    padding-bottom: 4px;
+  }
+  a {
+    font-weight: 500;
+    color: #57a203;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
 /* index-header */
 .mobile-nav-list {
   display: flex;
@@ -611,6 +756,69 @@ img {
 
 /* RWD */
 @media (min-width: 768px) {
+  /* brandStory.html */
+  .brand-main {
+    img {
+      max-width: 1076px;
+      margin: 0 auto;
+    }
+  }
+  .brand-banner {
+    min-height: 400px;
+    .brand-title {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .brand-intro {
+    margin: 64px auto;
+    padding: 32px;
+    text-align: center;
+  }
+  .brand-about {
+    padding-bottom: 48px;
+    h4 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    p:nth-child(3) {
+      margin-bottom: 16px;
+    }
+  }
+  .brand-history {
+    margin: 48px auto;
+    padding-bottom: 48px;
+    h4 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .brand-concept {
+    margin: 48px auto;
+    padding-bottom: 48px;
+    h4 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .brand-story {
+    margin: 48px auto;
+    padding-bottom: 48px;
+    h4 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
   /* index */
   .header-inner {
     padding: 17px 0;
