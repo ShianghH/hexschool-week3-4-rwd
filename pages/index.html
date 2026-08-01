@@ -18,30 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <a href="index.html" class="logo">URBNSTEP</a>
-          <nav class="desktop-nav">
-            <ul class="desktop-nav-list">
-              <li><a href="productList.html">產品列表</a></li>
-              <li><a href="brandStory.html">品牌故事</a></li>
-            </ul>
-          </nav>
-          <a href="#" class="member-link"><i class="bi bi-person"></i></a>
-        </div>
-      </div>
-      <nav class="mobile-nav">
-        <ul class="mobile-nav-list">
-          <li><a href="productList.html">產品列表</a></li>
-          <li><a href="brandStory.html">品牌故事</a></li>
-        </ul>
-      </nav>
-    </header>
+    <%- include('./layout/header', { showMobileNav: true }); -%>
     <div class="banner">
       <div class="banner-content">
         <h1>URBNSTEP</h1>
@@ -320,26 +299,7 @@
         </div>
       </section>
     </main>
-    <section class="member-promo">
-      <div class="container promo-inner">
-        <p>加入會員取得 9 折優惠</p>
-        <a href="#" class="btn">馬上註冊</a>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <a href="index.html" class="logo">URBNSTEP</a>
-          <ul class="nav-list">
-            <li><a href="productList.html">商品列表</a></li>
-            <li><a href="brandStory.html">品牌故事</a></li>
-          </ul>
-        </div>
-        <div class="footer-bottom">
-          <p class="copyright">Copyright © 2025 URBNSTYLE</p>
-          <p>All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

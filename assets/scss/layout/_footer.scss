@@ -1,0 +1,87 @@
+// 加入會員
+.member-promo {
+  margin-top: 24px;
+  background-color: #e8fec5;
+  .promo-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 20px;
+      font-weight: 700;
+      margin-right: 16px;
+    }
+    a {
+      color: #ffffff;
+      background-color: #212529;
+      border-radius: 4px;
+      padding: 8px 16px;
+      margin: 24px 0;
+    }
+    a:hover {
+      color: #c0fa73;
+    }
+  }
+}
+
+.footer {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  .footer-top {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .logo {
+      margin-bottom: 4px;
+      align-self: flex-start;
+    }
+
+    .nav-list a {
+      display: block;
+      margin-left: 12px;
+      margin-top: 4px;
+      padding: 12px 0;
+    }
+    .nav-list a:hover {
+      color: #c0fa73;
+    }
+  }
+  .footer-bottom {
+    padding-top: 32px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    border-top: 1px solid #dee2e6;
+    .copyright {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .member-promo {
+    margin-top: 48px;
+    .promo-inner {
+      p {
+        font-size: 24px;
+        margin-right: 24px;
+      }
+      a {
+        padding: 12px 24px;
+      }
+    }
+  }
+  .footer {
+    margin: 64px 0;
+    .footer-top {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .nav-list {
+        display: flex;
+        gap: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 12px;
+  position: relative;
+  font-family: "Mina", sans-serif;
+}
+.logo::after {
+  content: "";
+  background-color: #c0fa73;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  z-index: -1;
+}
+.logo:hover,
+.member-link:hover {
+  color: #c0fa73;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+/* index-mpbile-header */
+.mobile-nav-list {
+  display: flex;
+}
+.mobile-nav-list li {
+  text-align: center;
+  flex: 1;
+  background-color: #e8fec5;
+}
+.mobile-nav-list li:hover {
+  background-color: #f5fee7;
+}
+
+.mobile-nav-list a {
+  display: block;
+  padding: 12px 0;
+}
+
+@media (min-width: 768px) {
+  .header-inner {
+    padding: 17px 0;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+    margin-left: 48px;
+    .desktop-nav-list {
+      display: flex;
+      gap: 40px;
+      a {
+        padding: 12px 0;
+      }
+      a:hover {
+        color: #c0fa73;
+      }
+    }
+  }
+  .member-link {
+    margin-left: auto;
+  }
+}

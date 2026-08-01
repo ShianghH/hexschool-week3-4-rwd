@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
