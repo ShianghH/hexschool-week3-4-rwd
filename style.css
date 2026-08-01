@@ -759,6 +759,7 @@ img {
   /* brandStory.html */
   .brand-main {
     img {
+      width: 100%;
       max-width: 1076px;
       margin: 0 auto;
     }
