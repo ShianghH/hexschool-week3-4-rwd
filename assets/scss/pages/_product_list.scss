@@ -1,6 +1,5 @@
 .product-list-layout {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 0;
 }
 .breadcrumb {
   .breadcrumb-list {
@@ -86,8 +85,7 @@
 
 @media (min-width: 768px) {
   .product-list-layout {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0;
   }
 
   .breadcrumb {
@@ -109,6 +107,7 @@
     display: block;
     width: 20%;
     margin-right: 48px;
+    flex-shrink: 0;
     .category-item {
       margin-bottom: 20px;
       a {
@@ -123,7 +122,8 @@
     }
   }
   .product-content {
-    width: 80%;
+    flex: 1;
+    min-width: 0;
   }
   .product-list {
     margin: 0 -12px;

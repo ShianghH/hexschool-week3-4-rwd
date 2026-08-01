@@ -49,13 +49,10 @@
 .new-products-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -6px;
-  margin-right: -6px;
-
+  margin: 0 -6px;
   li {
     width: 50%;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 0 6px;
     margin-bottom: 24px;
     img {
       margin-bottom: 8px;
@@ -225,8 +222,7 @@
   }
   .style-guide-list {
     display: flex;
-    margin-left: -8px;
-    margin-right: -8px;
+    margin: 0 -8px;
     overflow-x: auto;
     scrollbar-width: none;
   }
@@ -239,8 +235,7 @@
     }
     li {
       flex: 0 0 316px;
-      padding-left: 8px;
-      padding-right: 8px;
+      padding: 0 8px;
     }
     img {
       object-fit: cover;
@@ -275,11 +270,9 @@
     }
   }
   .new-products-list {
-    margin-right: -12px;
-    margin-left: -12px;
+    margin: 0 -12px;
     li {
-      padding-right: 12px;
-      padding-left: 12px;
+      padding: 0 12px;
       margin-bottom: 40px;
       img {
         margin-bottom: 12px;
